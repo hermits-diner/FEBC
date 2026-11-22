@@ -1,0 +1,7 @@
+# 설치: pip install -r requirements.txt
+numpy>=2.5.5
+imageio-ffmpeg>=0.8.1
+faster-whisper>=1.2.1
+
+# (선택) gemini_review.py 실험 기능을 쓸 때만 필요 — 앞의 # 을 지우고 설치
+# google-genai>=3.6.1

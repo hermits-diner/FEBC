@@ -30,9 +30,9 @@ MP3 파일을 아이콘 위로 끌어다 놓으면 받아쓰기 원고가 만들
 ## 설치 (처음 한 번)
 
 1. **Python 3.12** 설치 — 설치 화면에서 *Add python.exe to PATH* 를 꼭 체크하세요.
-2. 명령 프롬프트에서 필요한 패키지 설치:
+2. 이 폴더에서 명령 프롬프트를 열고 필요한 패키지 설치:
    ```
-   pip install numpy imageio-ffmpeg faster-whisper
+   pip install -r requirements.txt
    ```
    - `imageio-ffmpeg` 가 ffmpeg 를 함께 내려받으므로 ffmpeg 를 따로 설치할 필요가 없습니다.
    - 처음 받아쓰기를 할 때 음성인식 모델(Whisper small, 약 500MB)을 자동으로 내려받습니다.
@@ -126,6 +126,7 @@ python febc_edit.py "원본.mp3" -o "결과.mp3"     # 결과 파일 이름 지�
 | `febc_edit.py` | 본체: 받아쓰기, 원고 생성, 편집 서버, 송출 파일 생성 |
 | `editor_template.html` | 브라우저 편집 화면 |
 | `설교편집.bat` | MP3를 끌어다 놓으면 편집 화면을 여는 실행 파일 |
+| `requirements.txt` | 필요한 Python 패키지 목록 |
 | `gemini_review.py` | (실험 중) Gemini 로 편집 제안 받기 — 아직 편집 화면에 연결되어 있지 않음 |
 | `.env.example` | Gemini API 키 설정 예시. `.env` 로 복사해 키를 넣으세요 (`.env` 는 GitHub 에 올라가지 않음) |
 
